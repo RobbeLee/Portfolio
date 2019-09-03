@@ -15,8 +15,12 @@
             <p class="who__p">My name is Robbe, Robbe van der Lee.
                 I am currently studying to become a fullstack webdeveloper
                 at the Mediacollege in Amsterdam. When I am not at school I           
-                usually work as a barista for Starbucks.
+                usually work as a barista for Starbucks. Outside of school and work
+                I do scouting and Dragonboat racing. 
             </p>
+            <p class="who__p2">For the uninitiated amongst us, a fullstack developer is someone who can build
+                both the front and the backend of a website. So someone who can build both the visuals of a website
+                but who can also build protection for the website. </p>
         </div>
         <div class="skills" id="skills">
             <h2 class="skills__title">Skills</h2>

@@ -5,20 +5,31 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-    .nav {
+    nav {
         top: 0;
         background-color: #f3f3f3;
         border-bottom: 10px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding-top: 0;
+
     }
         .left {
+            width: 500px;
             padding-left: 5px;
             color: #6600ee;
             font-family: 'Inconsolata', monospace;
             width: 100%;
+            top: 0;
+            margin: 0;
         }
+            .left__title {
+                margin: 0;
+                padding-top: 2px;
+            }
         .right {
             text-align: right;
-            padding-right: 5px;
             font-family: 'Inconsolata', monospace;
             font-size: 20px;
             overflow: hidden;

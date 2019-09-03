@@ -1,6 +1,6 @@
 <nav>
     <div class="left">
-        <h2 class="left_title">< Robbe /></h2>
+        <h2 class="left__title">< Robbe /></h2>
     </div>
     <div class="right">
         <a href="#who" class="right__a">About me</a>
