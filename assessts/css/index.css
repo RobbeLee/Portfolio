@@ -5,51 +5,71 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+    /* nav section */
     nav {
-        top: 0;
-        background-color: #f3f3f3;
-        border-bottom: 10px;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        padding-top: 0;
-
+        background-color: #fafafa;
+        overflow: hidden;
+        padding-top: 1px;
+        font-family: 'Inconsolata', monospace;
+        font-size: 20px;
     }
         .left {
-            width: 500px;
-            padding-left: 5px;
+            text-align: left;
+            float: left;
             color: #6600ee;
-            font-family: 'Inconsolata', monospace;
-            width: 100%;
-            top: 0;
-            margin: 0;
+            padding-left: 10px;
         }
             .left__title {
                 margin: 0;
                 padding-top: 2px;
             }
         .right {
-            text-align: right;
-            font-family: 'Inconsolata', monospace;
-            font-size: 20px;
-            overflow: hidden;
+            float: right;
         }
             .right__a {
-                padding: 10px;
+                padding: 12px;
                 text-decoration: none;
                 color: black;
+                width: 100%;
             }
                 .right__a:hover {
                     color: #6600ee;
-                    transition: 1s;
-                }         
+                    transition: .2s;
+                }  
+    
+    /* wrapper section */       
     .wrapper {
         margin: 0;
         padding: 0;
         padding-left: 5px;
     }
+
+    /* titles section */
         .titles {
             top: 300px;
             text-align: center;
         }
-            
+
+    /* Who section */
+    .who {
+        width: 750px;
+    }
+        .who__title {
+            padding-left: 10px;
+        }
+        .who__p {
+            padding-left: 15px;
+        }
+        .who__p2 {
+            padding-left: 15px;
+        }
+    
+    /* skills section */
+    .skills {
+        display: flex;
+        float: right;
+        width: 700px;
+    }   
+        .skills__title {
+            padding: 10px;
+        }   
