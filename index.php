@@ -6,33 +6,68 @@
 </head>
 
 <body>
-    <?php require 'includes/nav.php'; ?>
+    <nav>
+        <div class="left">
+            <h2 class="left__title">< Robbe /></h2>
+        </div>
+        <div class="right">
+            <a href="#skills" class="right__a">Skills</a>
+            <a href="#who" class="right__a">About me</a>
+            <a href="#contact" class="right__a">Contact</a>
+        </div>
+    </nav>
     <div class="wrapper">
         <div class="titles">
+            <h2 class="titles__subtitle">I AM A FULLSTACK WEBDEVELOPER</h2>
             <h1 class="titles__title">Robbe van der Lee</h1>
-            <h2 class="titles__subtitle">Fullstack media developer</h2>
-        </div>
-        <div class="who" id="who">
-            <h2 class="who__title">Who am I?</h2>
-            <p class="who__p">My name is Robbe, Robbe van der Lee.
-                I am currently studying to become a fullstack webdeveloper
-                at the Mediacollege in Amsterdam. When I am not at school I
-                usually work as a barista for Starbucks. Outside of school and work
-                I do scouting and Dragonboat racing.
-            </p>
-            <p class="who__p2">For the uninitiated amongst us, a fullstack developer is someone who can build
-                both the front and the backend of a website. So someone who can build both the visuals of a website
-                but who can also build protection for the website. </p>
         </div>
         <div class="skills" id="skills">
             <h2 class="skills__title">Skills</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h2 class="card__h2">HTML</h2>
+                </div>
+                <div class="card">
+                    <h2 class="card__h2">CSS3</h2>
+                </div>
+                <div class="card">
+                    <h2 class="card__h2">SASS</h2>
+                </div>
+                <div class="card">
+                    <h2 class="card__h2">SCSS</h2>
+                </div>
+                <div class="card">
+                    <h2 class="card__h2">Javascript</h2>
+                </div>
+                <div class="card">
+                    <h2 class="card__h2">PHP</h2>
+                </div>
+                <div class="card">
+                    <h2 class="card__h2">SQL</h2>
+                </div>
+            </div>
             <p class="skills__p">Everyday I work to become better at the languages I use.
                 For frontend I am currently working a lot with HTML5, CSS3 and Javascript for school.
-                In my own time I am working on my
-                <!-- Hier later invoegen -->
+                <!-- In my own time I am working on my
+                Hier later invoegen -->
                 For backend I mainly work with PHP and SQL, but I am always looking for new skills to learn.
                 if you want to stay updated on my work and current projects, take a look at my github <a href="https://github.com/RobbeLee" target="_blank">RobbeLee</a>
             </p>
+        </div>
+        <div class="who" id="who">
+            <h2 class="who__title">Who am I?</h2>
+            <div class="who__p--container">
+                <p class="who__p">My name is Robbe, Robbe van der Lee.
+                    I am currently studying to become a fullstack webdeveloper
+                    at the Mediacollege in Amsterdam. When I am not at school I
+                    usually work as a barista for Starbucks. Outside of school and work
+                    I do scouting and Dragonboat racing.
+                </p>
+                <p class="who__p2">For the uninitiated amongst us, a fullstack developer is someone who can build
+                    both the front and the backend of a website. So someone who can build both the visuals of a website
+                    but who can also build protection for the website.
+                </p>
+            </div>
         </div>
         <div class="contact" id="contact">
             <h2 class="contact__title">Contact</h2>
