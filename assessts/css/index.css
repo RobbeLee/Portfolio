@@ -15,9 +15,10 @@ body {
         top: 0;
         left: 0;
         right: 0;
-        background: #fafafa;
+        background: #ffffff;
         z-index: 9999;
         opacity: 0.95;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
     }
         .left {
             box-sizing: content-box;
@@ -86,6 +87,7 @@ body {
                 padding-bottom: 10px;
                 display: flex;
                 justify-content: center;
+                color: #111111;
             }
                 .skills__title::after {
                     content: '';
@@ -103,7 +105,7 @@ body {
                 .card {
                     border: solid 2px #000;
                     margin: 10px;
-                    transition: 300ms;
+                    transition: border-color 300ms ease;
                     width: 100px;
                 }
                     .card:hover {
@@ -115,12 +117,16 @@ body {
                     }
             .skills__p {
                 width: 50vw;
-                font-size: 15px;
+                font-size: 20px;
+                font-weight: 300;
+                color: #191919;
+
             }
                 .skills__a {
                     text-decoration: none;
-                    color: #000;
+                    color: #111111;
                     position: relative;
+                    
                 }
                     .skills__a::before {
                         content: '';
@@ -156,6 +162,7 @@ body {
                 padding-bottom: 10px;
                 display: flex;
                 justify-content: center;
+                color: #191919;
             }
                 .who__title::after {
                     content: '';
@@ -174,11 +181,19 @@ body {
                 align-items: center;
             }
                 .who__p {
-                width: 50vw;
+                width: 90vw;
+                max-width: 700px;
                 text-align: center;
+                font-weight: 300;
+                color: #191919;
+                font-size: 20px;
                 }
                 .who__p2 {
-                    width: 50vw;
+                    width: 90vw;
+                    max-width: 700px;
+                    font-weight: 300;
+                    color: #191919;
+                    font-size: 20px;
                 }
         
         .contact {
@@ -194,6 +209,7 @@ body {
                 padding-bottom: 10px;
                 display: flex;
                 justify-content: center; 
+                color: #191919;
             }
                 .contact__title::after {
                     content: '';
@@ -206,10 +222,38 @@ body {
             .contact__p {
                 margin-bottom: 0;
                 margin-top: 0;
+                font-weight: 300;
+                color: #191919;
+                font-size: 20px;
             }
             .contact__list {
                 margin-top: 5px;
                 text-align: left;
+                font-weight: 300;
+                color: #191919;
+                font-size: 20px;
             }
+                .contact__list__li__a {
+                    text-decoration: none;
+                    color: #111111;
+                    position: relative;
+                }
+                    .contact__list__li__a::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background: #0096ed;
+                        transform: scale(0, 1);
+                        transform-origin: right;
+                        transition: transform 250ms ease-out;
+                    }
+                        .contact__list__li__a:hover::before {
+                            transform-origin: left;
+                            transform: scale(1);
+                        }
 
     
