@@ -53,6 +53,15 @@
                 For backend I mainly work with PHP and SQL, but I am always looking for new skills to learn.
                 If you want to stay updated on my work and current projects, take a look at my github <a class="skills__a" href="https://github.com/RobbeLee" target="_blank">RobbeLee</a>.
             </p>
+            <div class="skills__projects-container">
+                <div class="skills__project">
+                    <h3 class="skills__project__title">This is a project</h3>
+                    <img class="skills__project__img" src="https://via.placeholder.com/1920x1080?text=big%20boy" alt="This would be a project mockup">
+                    <p class="skills__project__p">Here would be some project details</p>
+                    <a class="skills__project__a" href="" target="_blank">Project link</a>
+                    <a class="skills__project__a" href="" target="_blank">Github link</a>
+                </div>
+            </div>
         </div>
         <div class="who" id="who">
             <h2 class="who__title">Who am I?</h2>
@@ -63,9 +72,10 @@
                     usually work as a barista for Starbucks. Outside of school and work
                     I do scouting and Dragonboat racing.
                 </p>
-                <p class="who__p2">For the uninitiated amongst us, a fullstack developer is someone who can build
-                    both the front and the backend of a website. So someone who can build both the visuals of a website
-                    but who can also build protection for the website.
+                <p class="who__p2">
+                    For those that might not be in the loop. A fullstack developer is someone 
+                    who builds both the front and back end of the website. So someone who builds
+                    both the visuals and the protection of a web page.
                 </p>
             </div>
         </div>
