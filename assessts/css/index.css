@@ -74,7 +74,6 @@ body {
         .skills {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             align-items: center;
             height: 50vw;
             justify-content: center;
@@ -104,9 +103,9 @@ body {
             }
                 .card {
                     border: solid 2px #000;
-                    margin: 10px;
+                    margin: 5px;
                     transition: border-color 300ms ease;
-                    width: 100px;
+                    width: 100%;
                 }
                     .card:hover {
                         border: solid 2px #0096ed;
@@ -114,6 +113,10 @@ body {
                     .card__h2 {
                         font-weight: 300;
                         padding: 5px;
+                        margin-bottom: 1px;
+                        margin-top: 1px;
+                        padding-top: 0;
+                        padding-bottom: 0;
                     }
             .skills__p {
                 width: 50vw;
@@ -145,6 +148,9 @@ body {
             .skills__projects-container {
                 display: flex;
                 flex-direction: row;
+                padding: 10px;
+                width: 50vw;
+                justify-content: center;
             }
                 .skills__project {
                     padding: 1em 1em;
@@ -152,6 +158,10 @@ body {
                     box-shadow: 0 0 16px 0 rgba(190, 190, 190, 0.2), 0 16px 32px 0 rgba(0, 0, 0, 0.11);
                     border-radius: 14px;
                 }
+                    .skills__project + .skills__project {
+                        margin-left: -20px;
+                    }
+
                     .skills__project__title {
                         margin-top: 0;
                         position: relative;
@@ -175,6 +185,7 @@ body {
                     .skills__project__p {
                         font-weight: 300;
                         color: #191919;
+                        padding: 10px;
                     }
                     .skills__project__a {
                         text-decoration: none;

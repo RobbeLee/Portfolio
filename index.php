@@ -31,10 +31,10 @@
                     <h2 class="card__h2">CSS3</h2>
                 </div>
                 <div class="card">
-                    <h2 class="card__h2">SASS</h2>
+                    <h2 class="card__h2">SASS/SCSS</h2>
                 </div>
                 <div class="card">
-                    <h2 class="card__h2">SCSS</h2>
+                    <h2 class="card__h2">Adobe XD</h2>
                 </div>
                 <div class="card">
                     <h2 class="card__h2">JS</h2>
@@ -51,17 +51,34 @@
                 <!-- In my own time I am working on my
                 Hier later invoegen -->
                 For backend I mainly work with PHP and SQL, but I am always looking for new skills to learn.
+                I have also learned to work with projects as 
                 If you want to stay updated on my work and current projects, take a look at my github <a class="skills__a" href="https://github.com/RobbeLee" target="_blank">RobbeLee</a>.
             </p>
             <div class="skills__projects-container">
                 <div class="skills__project">
-                    <h3 class="skills__project__title">This is a project</h3>
+                    <h3 class="skills__project__title">Ocean Studios</h3>
                     <img class="skills__project__img" src="https://via.placeholder.com/1920x1080?text=big%20boy" alt="This would be a project mockup">
-                    <p class="skills__project__p">Here would be some project details</p>
-                    <a class="skills__project__a" href="" target="_blank">Project link</a>
-                    <a class="skills__project__a" href="" target="_blank">Github link</a>
+                    <p class="skills__project__p">
+                        Ocean studios was a group project where we built a website for our little company.
+                        I worked on the webshop part of the website. 
+                    </p>
+                    <a class="skills__project__a" href="http://www.oceanstudios.nl" target="_blank">Project link</a>
+                    <a class="skills__project__a" href="https://github.com/RobbeLee/OceanStudios" target="_blank">Github link</a>
                 </div>
-            </div>
+                <div class="skills__project">
+                    <h3 class="skills__project__title">The Chain</h3>
+                    <img class="skills__project__img" src="https://via.placeholder.com/1920x1080?text=big%20boy" alt="This would be a project mockup">
+                    <p class="skills__project__p">This was a solo project where I had to build a website for a community, I built one for a D&D community. For this project everything is loaded in from a database.</p>
+                    <a class="skills__project__a" href="http://26785.hosts2.ma-cloud.nl/MyBand-Starter/public/" target="_blank">Project link</a>
+                    <a class="skills__project__a" href="https://github.com/RobbeLee/MyBand-Starter" target="_blank">Github link</a>
+                </div>
+                <div class="skills__project">
+                    <h3 class="skills__project__title">Gato</h3>
+                    <img class="skills__project__img" src="https://via.placeholder.com/1920x1080?text=big%20boy" alt="This would be a project mockup">
+                    <p class="skills__project__p">Gato was a group project where we had to make a small social media platform. Sadly due to server issues this project is no longer online.</p>
+                    <a class="skills__project__a" href="https://github.com/RobbeLee/Gato" target="_blank">Github link</a>
+                </div>
+            </div>            
         </div>
         <div class="who" id="who">
             <h2 class="who__title">Who am I?</h2>
