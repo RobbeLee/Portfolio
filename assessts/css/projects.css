@@ -79,6 +79,7 @@ body {
             flex-direction: row;
             padding: 10px;
             justify-content: center;
+            width: 100vw;
         }
             .project {
                 padding: 1em 1em;
