@@ -75,7 +75,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 50vw;
+            height: 56vw;
             justify-content: center;
             align-items: center;
         }
@@ -123,7 +123,6 @@ body {
                 font-size: 20px;
                 font-weight: 300;
                 color: #191919;
-
             }
                 .skills__a {
                     text-decoration: none;
@@ -208,7 +207,10 @@ body {
                             .skills__project__a:hover::before {
                                 width: 100%;
                             }
-
+            .skills__p2 {
+                font-weight: 300;
+                font-size: 16px;
+            }
         .who {
             display: flex;
             flex-direction: column;

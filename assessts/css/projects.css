@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap'); /*font-family: 'Inconsolata', monospace;*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        z-index: 9999;
+        opacity: 0.95;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    }
+        .left {
+            box-sizing: content-box;
+        }
+            .left__title {
+                margin: 0;
+                padding-right: 40px;
+                padding-left: 10px;
+                font-size: 25px;
+                text-decoration: none;
+                color: #000;
+            }
+        .right {
+            padding-top: 5px;
+        }
+            .right__a {
+                text-decoration: none;
+                padding: 5px;
+                font-size: 18px;
+                color: #000000;
+                transition: color 300ms;
+            }
+                .right__a:hover {
+                    color: #0096ed;
+                }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+            .title__h1 {
+                text-align: center;
+                position: relative;
+                justify-content: center;
+                padding-bottom: 10px;
+                padding-top: 60px;
+                display: flex;
+                justify-content: center;
+                color: #111111;
+            }
+                .title__h1::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: 100px;
+                    height: 1px;
+                    background: #0096ed;
+                }
+        .projects-container {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: center;
+        }
+            .project {
+                padding: 1em 1em;
+                background: #fff;
+                box-shadow: 0 0 16px 0 rgba(190, 190, 190, 0.2), 0 16px 32px 0 rgba(0, 0, 0, 0.11);
+                border-radius: 14px;
+            }
+                .project + .project {
+                    margin-left: -20px;
+                }
+                .project__title {
+                    margin-top: 0;
+                    position: relative;
+                    color: #111111;
+                    padding-bottom: 5px;
+                    display: flex;
+                    justify-content: center;
+                }
+                    .project__title::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        width: 110px;
+                        height: 1px;
+                        background: #0096ed;
+                    }
+                .project__img {
+                    width: 300px;
+                    height: 200px;
+                }
+                .project__p {
+                    font-weight: 300;
+                    color: #191919;
+                    padding: 10px;
+                }
+                .project__a {
+                    text-decoration: none;
+                    color: #111111;
+                    position: relative;
+                    padding: 5px;
+                    padding-bottom: 0;
+                }
+                    .project__a::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        width: 20%;
+                        height: 2px;
+                        background: #0096ed;
+                        transition: width 250ms ease-out; 
+                    }
+                        .project__a:hover::before {
+                            width: 100%;
+                        }
