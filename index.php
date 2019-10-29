@@ -58,8 +58,8 @@
                     <!-- In my own time I am working on my
                     Hier later invoegen -->
                     For backend I mainly work with PHP and SQL, but I am always looking for new skills to learn.
-                    I have also learned to work with projects as 
                     If you want to stay updated on my work and current projects, take a look at my github <a class="skills__a" href="https://github.com/RobbeLee" target="_blank">RobbeLee</a>.
+                    If you want to see my CV please send an email to info@robbelee.nl.
                 </p>
                 <div class="skills__projects-container">
                     <div class="skills__project">
