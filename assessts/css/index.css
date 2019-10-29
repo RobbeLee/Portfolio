@@ -5,6 +5,9 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+    .nav-toggle-label {
+        display: none;
+    }
     nav {
         display: flex;
         flex-direction: row;
@@ -75,7 +78,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 56vw;
+            min-height: 56vw;
             justify-content: center;
             align-items: center;
         }
@@ -148,7 +151,6 @@ body {
                 display: flex;
                 flex-direction: row;
                 padding: 10px;
-                width: 50vw;
                 justify-content: center;
             }
                 .skills__project {
@@ -178,8 +180,9 @@ body {
                             background: #0096ed;
                         }
                     .skills__project__img {
-                        width: 300px;
-                        height: 200px;
+                        width: 100%;
+                        height: auto;
+                        max-width: 250px;
                     }
                     .skills__project__p {
                         font-weight: 300;
@@ -318,6 +321,9 @@ body {
                             width: 100%;
                         }
 @media (min-width: 700px) and (max-width: 1160px) {
+    .nav-toggle-label {
+        display: none;
+    }
     .titles {
         display: flex;
         flex-direction: column;
@@ -328,29 +334,107 @@ body {
     }
     .skills {
         width: 100vw;
-        height: 60vh;
+        min-height: 60vh;
         padding-bottom: 200px;
     }
         .skills__projects-container {
             width: 60vw;
+            display: flex;
+            flex-direction: column;
         }
             .skills__project {
                 width: 60vw;
+            }
+            .skills__project + .skills__project {
+                margin-top: 20px;
+                margin-left: 0;
             }
     .who {
         width: 100vw;
         height: 60vh;
     }
 }
+
 @media (max-width: 700px) {
-    .titles {
+    .nav-toggle {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+    }
+    .nav-toggle:focus ~ .nav-toggle-label {
+        outline: 3px solid rgba(lightblue, .75);
+    } 
+    .nav-toggle-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        z-index: 9999;
+    }
+    .nav-toggle-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        display: flex;
+        align-items: center;
+    } 
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: #000000;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: fixed;
+    }  
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }  
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }  
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+    nav {
+        position: absolute;
+        text-align: center;
         width: 100vw;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+    }
+        .right__a {
+            opacity: 0;
+            transition: opacity 150ms ease-in-out;
+            justify-content: center;
+        }
+    .nav-toggle:checked ~ nav {
+        transform: scale(1,1);
+    }
+    .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+    .titles {
+        width: 100%;
         height: 100vh;
         padding-bottom: 150px;
     }
         .titles__subtitle {
             width: 100%;
-            font-size: 50px;
+            font-size: 40px;
         }
         .titles__title {
             font-size: 24px;
@@ -358,10 +442,9 @@ body {
             text-align: left;
         }
     .skills {
-        width: 100vw;
-        height: 60vh;
-        padding-bottom: 500px;
-        padding-top: 200px;
+        width: 100%;
+        min-height: auto;
+        padding-bottom: 100px;
     }
         .cards-container {
             width: 50vw;
@@ -377,6 +460,10 @@ body {
                 width: 200px;
                 height: 50vh;
             }
+                .skills__project + .skills__project {
+                    margin-top: 20px;
+                    margin-left: 0;
+                }
         .skills__p2 {
             width: 300px;
         }

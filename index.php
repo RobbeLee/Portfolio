@@ -9,6 +9,7 @@
         <title>Home | Robbe</title>
     </head>
     <body>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <div class="left">
                 <a class="left__title" href="#top">< Robbe /></a>
@@ -19,6 +20,9 @@
                 <a href="#contact" class="right__a">Contact</a>
             </div>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
         <div class="wrapper">
             <div class="titles">
                 <h2 class="titles__subtitle">I AM A FULLSTACK WEBDEVELOPER</h2>
