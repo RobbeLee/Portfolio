@@ -108,7 +108,7 @@
                 <h2 class="contact__title">Contact</h2>
                 <p class="contact__p"> There are several ways to contact me and/or find me.</p>
                 <ul class="contact__list">
-                    <li class="contact__list__li">Email : robbevanderlee@gmail.com</li>
+                    <li class="contact__list__li">Email : info@robbelee.nl </li>
                     <li class="contact__list__li">Phone : +31 06 12 55 91 73</li>
                     <li class="contact__list__li">LinkedIn : <a href="https://www.linkedin.com/in/robbe-lee/" target="_blank" class="contact__list__li__a">Robbe van der Lee</a></li>
                     <li class="contact__list__li">Github : <a href="https://github.com/RobbeLee" target="_blank" class="contact__list__li__a">RobbeLee</a></li>
