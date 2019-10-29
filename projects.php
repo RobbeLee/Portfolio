@@ -9,6 +9,7 @@
         <title>Projects | Robbe</title>
     </head>
     <body>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <div class="left">
                 <a class="left__title" href="index.php">< Robbe /></a>
@@ -19,33 +20,38 @@
                 <a href="index.php#contact" class="right__a">Contact</a>
             </div>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
         <div class="wrapper">
             <div class="title">
                 <h1 class="title__h1">Projects</h1>
             </div>
-            <div class="projects-container">
-                <div class="project">
-                <h3 class="project__title">Ocean Studios</h3>
-                    <img class="project__img" src="assessts/images/ocean-mockup.png" alt="This would be a project mockup">
-                    <p class="project__p">
-                        Ocean studios was a group project where we built a website for our little company.
-                        I worked on the webshop part of the website. 
-                    </p>
-                    <a class="project__a" href="http://www.oceanstudios.nl" target="_blank">Project link</a>
-                    <a class="project__a" href="https://github.com/RobbeLee/OceanStudios" target="_blank">Github link</a>
-                </div>
-                <div class="project">
-                    <h3 class="project__title">The Chain</h3>
-                    <img class="project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
-                    <p class="project__p">This was a solo project where I had to build a website for a community, I built one for a D&D community. For this project everything is loaded in from a database.</p>
-                    <a class="project__a" href="http://26785.hosts2.ma-cloud.nl/MyBand-Starter/public/" target="_blank">Project link</a>
-                    <a class="project__a" href="https://github.com/RobbeLee/MyBand-Starter" target="_blank">Github link</a>
-                </div>
-                <div class="project">
-                    <h3 class="project__title">Gato</h3>
-                    <img class="project__img" src="assessts/images/gato-mockup.png" alt="This would be a project mockup">
-                    <p class="project__p">Gato was a group project where we had to make a small social media platform. Sadly due to server issues this project is no longer online.</p>
-                    <a class="project__a" href="https://github.com/RobbeLee/Gato" target="_blank">Github link</a>
+            <div class="skills">
+                <div class="skills__projects-container">
+                    <div class="skills__project">
+                        <h3 class="skills__project__title">Ocean Studios</h3>
+                        <img class="skills__project__img" src="assessts/images/ocean-mockup.png" alt="This would be a project mockup">
+                        <p class="skills__project__p">
+                            Ocean studios was a group project where we built a website for our little company.
+                            I worked on the webshop part of the website. 
+                        </p>
+                        <a class="skills__project__a" href="http://www.oceanstudios.nl" target="_blank">Project link</a>
+                        <a class="skills__project__a" href="https://github.com/RobbeLee/OceanStudios" target="_blank">Github link</a>
+                    </div>
+                    <div class="skills__project">
+                        <h3 class="skills__project__title">The Chain</h3>
+                        <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
+                        <p class="skills__project__p">This was a solo project where I had to build a website for a community, I built one for a D&D community. For this project everything is loaded in from a database.</p>
+                        <a class="skills__project__a" href="http://26785.hosts2.ma-cloud.nl/MyBand-Starter/public/" target="_blank">Project link</a>
+                        <a class="skills__project__a" href="https://github.com/RobbeLee/MyBand-Starter" target="_blank">Github link</a>
+                    </div>
+                    <div class="skills__project">
+                        <h3 class="skills__project__title">Gato</h3>
+                        <img class="skills__project__img" src="assessts/images/gato-mockup.png" alt="This would be a project mockup">
+                        <p class="skills__project__p">Gato was a group project where we had to make a small social media platform. Sadly due to server issues this project is no longer online.</p>
+                        <a class="skills__project__a" href="https://github.com/RobbeLee/Gato" target="_blank">Github link</a>
+                    </div>
                 </div>
             </div>
         </div>
