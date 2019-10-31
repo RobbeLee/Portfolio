@@ -44,8 +44,18 @@ body {
                 color: #000000;
                 transition: color 300ms;
             }
-                .right__a:hover {
+                .right__a:hover, .right__a:focus {
                     color: #0096ed;
+                }
+            .right__a--coloured {
+                border-radius: 2000px;
+                background: rgba(0,150,237,.1);
+                padding: .5em 1em;
+                color: rgba(0,150,237,1);
+                transition: 270ms ;
+            }
+                .right__a--coloured:hover, .right__a--coloured:focus {
+                    background: rgba(0,150,237,.25);
                 }
 
     .wrapper {
@@ -110,8 +120,8 @@ body {
                     transition: border-color 300ms ease;
                     width: 100%;
                 }
-                    .card:hover {
-                        border: solid 2px #0096ed;
+                    .card:hover, .card:focus {
+                        border-color: #0096ed;
                     }
                     .card__h2 {
                         font-weight: 300;
@@ -144,7 +154,7 @@ body {
                         background: #0096ed;
                         transition: width 250ms ease-out;
                     }
-                    .skills__a:hover::before {
+                    .skills__a:hover::before, .skills__a:focus::before {
                         width: 100%;
                     }
             .skills__projects-container {
@@ -162,7 +172,6 @@ body {
                     .skills__project + .skills__project {
                         margin-left: -20px;
                     }
-
                     .skills__project__title {
                         margin-top: 0;
                         position: relative;
@@ -207,9 +216,17 @@ body {
                             background: #0096ed;
                             transition: width 250ms ease-out; 
                         }
-                            .skills__project__a:hover::before {
+                            .skills__project__a:hover::before, .skills__project__a:focus::before {
                                 width: 100%;
                             }
+                            .skills__project__img {
+                                width: 100%;
+                                height: auto;
+                                max-width: 250px;
+                                }
+                    .skills__project__modal-container {
+                        display: none;
+                    }
             .skills__p2 {
                 font-weight: 300;
                 font-size: 16px;
@@ -317,7 +334,7 @@ body {
                         background: #0096ed;
                         transition: width 250ms ease-out;
                     }
-                        .contact__list__li__a:hover::before {
+                        .contact__list__li__a:hover::before, .contact__list__li__a:focus::before {
                             width: 100%;
                         }
 @media (min-width: 700px) and (max-width: 1160px) {
