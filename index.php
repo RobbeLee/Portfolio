@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Robbe van der Lee">
         <link rel="stylesheet" href="assessts/css/index.css">
-        <script defer src="assessts/js/main.js"></script>
         <title>Home | Robbe</title>
     </head>
     <body>
@@ -73,36 +72,63 @@
                         <a class="skills__project__a" data-id="0">Learn more</a>
                     </div>
                     <div class="skills__project__modal-container" data-id="0">
-                        <div id="skills__project__modal" class="skills__project__overlay skills__project__modal--light">
-                            <a class="skills__project__modal--cancel">&times;</a>
+                        <div id="skills__project__modal" class="skills__project__overlay">
+                            <a class="skills__project__modal--cancel" data-id="0">&times;</a>
 	                        <div class="skills__project__modal--popup">
-	                        <h2>Ocean Studios</h2>
+	                        <h2 class="skills__project__modal--title">Ocean Studios</h2>
                                 <img class="skills__project__img" src="assessts/images/ocean-mockup.png" alt="This would be a project mockup">
 		                        <div class="skills__project__modal--content">
-                                    <p>Ocean studios was a group project where we built a website for our little company. 
+                                    <p class="skills__project__modal__p">Ocean studios was a group project where we built a website for our little company. 
                                         I worked on the webshop part of the website. </p>
-                                    <p><b>Talen:</b> HTML, CSS, PHP</p>
+                                    <p class="skills__project__modal__p--lang"><b>Talen:</b> HTML, CSS, PHP, JSON, JS</p>
                                     <a class="skills__project__a" href="http://www.oceanstudios.nl" target="_blank">Project link</a>
                                     <a class="skills__project__a" href="https://github.com/RobbeLee/OceanStudios" target="_blank">Github link</a>           
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>   
                     <div class="skills__project">
                         <h3 class="skills__project__title">The Chain</h3>
                         <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
                         <p class="skills__project__p">This was a solo project where I had to build a website for a community, I built one for a D&D community. For this project everything is loaded in from a database.</p>
-                        <a class="skills__project__a" href="http://26785.hosts2.ma-cloud.nl/MyBand-Starter/public/" target="_blank">Project link</a>
-                        <a class="skills__project__a" href="https://github.com/RobbeLee/MyBand-Starter" target="_blank">Github link</a>
+                        <a class="skills__project__a" data-id="1">Learn more</a>
                     </div>
+                    <div class="skills__project__modal-container" data-id="1">
+                        <div id="skills__project__modal" class="skills__project__overlay">
+                            <a class="skills__project__modal--cancel" data-id="1">&times;</a>
+	                        <div class="skills__project__modal--popup">
+	                        <h2 class="skills__project__modal--title">The Chain</h2>
+                                <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
+		                        <div class="skills__project__modal--content">
+                                    <p class="skills__project__modal__p">This was a solo project where I had to build a website for a community, I built one for a D&D community. For this project everything is loaded in from a database.</p>
+                                    <p class="skills__project__modal__p--lang"><b>Talen:</b> PHP, SQL, HTML, CSS, AJAX, JS</p>
+                                    <a class="skills__project__a" href="http://26785.hosts2.ma-cloud.nl/MyBand-Starter/public/" target="_blank">Project link</a>
+                                    <a class="skills__project__a" href="https://github.com/RobbeLee/MyBand-Starter" target="_blank">Github link</a>           
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                     <div class="skills__project">
                         <h3 class="skills__project__title">Gato</h3>
                         <img class="skills__project__img" src="assessts/images/gato-mockup.png" alt="This would be a project mockup">
                         <p class="skills__project__p">Gato was a group project where we had to make a small social media platform. This was our first bigger group project.</p>
-                        <a class="skills__project__a" href="https://github.com/RobbeLee/Gato" target="_blank">Github link</a>
+                        <a class="skills__project__a" data-id="2">Learn more</a>
                     </div>
-                </div> 
+                    <div class="skills__project__modal-container" data-id="2">
+                        <div id="skills__project__modal" class="skills__project__overlay">
+                            <a class="skills__project__modal--cancel" data-id="2">&times;</a>
+	                        <div class="skills__project__modal--popup">
+	                        <h2 class="skills__project__modal--title">GATO</h2>
+                                <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
+		                        <div class="skills__project__modal--content">
+                                    <p class="skills__project__modal__p">Gato was a group project where we had to make a small social media platform. This was our first bigger group project.</p>
+                                    <p class="skills__project__modal__p--lang"><b>Talen:</b> PHP, SQL, HTML, CSS, AJAX, JS, JSON</p>
+                                    <a class="skills__project__a" href="https://github.com/RobbeLee/Gato" target="_blank">Github link</a>           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p class="skills__p2">Want to see <a href="projects.php" class="skills__a">more</a> ?</p>           
             </div>
             <div class="who" id="who">
@@ -134,4 +160,5 @@
             </div>
         </div>
     </body>
+<script src="assessts/js/main.js"></script>
 </html>
