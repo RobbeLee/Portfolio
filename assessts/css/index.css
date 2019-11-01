@@ -95,7 +95,6 @@ body {
             .skills__title {
                 text-align: center;
                 position: relative;
-                justify-content: center;
                 padding-bottom: 10px;
                 display: flex;
                 justify-content: center;
@@ -248,10 +247,6 @@ body {
                             height: 450px;
                             margin: 20px;
                             position: fixed;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-content: center;
                             text-align: center;
                             border-radius: 3%;
                         }

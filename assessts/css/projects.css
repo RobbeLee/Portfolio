@@ -77,38 +77,122 @@ body {
                     height: 1px;
                     background: #0096ed;
                 }
-                .skills {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    min-height: 56vw;
-                    justify-content: center;
-                    align-items: center;
+        .skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 56vw;
+            justify-content: center;
+            align-items: center;
+        }
+            .skills__projects-container {
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                justify-content: center;
+            }
+                .skills__project {
+                    padding: 1em 1em;
+                    background: #fff;
+                    box-shadow: 0 0 16px 0 rgba(190, 190, 190, 0.2), 0 16px 32px 0 rgba(0, 0, 0, 0.11);
+                    border-radius: 14px;
                 }
-                    .skills__projects-container {
+                    .skills__project + .skills__project {
+                        margin-left: -20px;
+                    }
+                    .skills__project__title {
+                        margin-top: 0;
+                        position: relative;
+                        color: #111111;
+                        padding-bottom: 5px;
                         display: flex;
-                        flex-direction: row;
-                        padding: 10px;
                         justify-content: center;
                     }
-                        .skills__project {
-                            padding: 1em 1em;
-                            background: #fff;
-                            box-shadow: 0 0 16px 0 rgba(190, 190, 190, 0.2), 0 16px 32px 0 rgba(0, 0, 0, 0.11);
-                            border-radius: 14px;
+                        .skills__project__title::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            width: 110px;
+                            height: 1px;
+                            background: #0096ed;
                         }
-                            .skills__project + .skills__project {
-                                margin-left: -20px;
+                    .skills__project__img {
+                        width: 100%;
+                        height: auto;
+                        max-width: 250px;
+                    }
+                    .skills__project__p {
+                        font-weight: 300;
+                        color: #191919;
+                        padding: 10px;
+                    }
+                    .skills__project__a {
+                        text-decoration: none;
+                        color: #111111;
+                        position: relative;
+                        padding: 5px;
+                        padding-bottom: 0;
+                        cursor: pointer;
+                    }
+                        .skills__project__a::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            width: 20%;
+                            height: 2px;
+                            background: #0096ed;
+                            transition: width 250ms ease-out; 
+                        }
+                            .skills__project__a:hover::before {
+                                width: 100%;
                             }
-                            .skills__project__title {
-                                margin-top: 0;
+                    .skills__project__modal-container {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: flex;
+                        background: #91909077;
+                        height: 100vh;
+                        width: 100vw;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 10;
+                    }
+                        .skills__project__overlay {
+                            background: #fff;
+                            width: 560px;
+                            height: 450px;
+                            margin: 20px;
+                            position: fixed;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-content: center;
+                            text-align: center;
+                            border-radius: 3%;
+                        }
+                            .skills__project__modal--cancel {
+                                position: absolute;
+                                top: 10px;
+                                right: 20px;
+                                cursor: pointer;
+                                transition: 250ms;
+                            }
+                                .skills__project__modal--cancel:hover {
+                                    color: #0096ed;
+                                }
+                            .skills__project__modal--title {
                                 position: relative;
-                                color: #111111;
-                                padding-bottom: 5px;
+                                color: #191919;
                                 display: flex;
                                 justify-content: center;
                             }
-                                .skills__project__title::after {
+                                .skills__project__modal--title::after {
                                     content: '';
                                     position: absolute;
                                     bottom: 0;
@@ -116,97 +200,13 @@ body {
                                     height: 1px;
                                     background: #0096ed;
                                 }
-                            .skills__project__img {
-                                width: 100%;
-                                height: auto;
-                                max-width: 250px;
-                            }
-                            .skills__project__p {
+                            .skills__project__modal__p {
                                 font-weight: 300;
-                                color: #191919;
-                                padding: 10px;
+                                text-align: center;
                             }
-                            .skills__project__a {
-                                text-decoration: none;
-                                color: #111111;
-                                position: relative;
-                                padding: 5px;
-                                padding-bottom: 0;
-                                cursor: pointer;
+                            .skills__project__modal__p--lang {
+                                font-weight: 300;
                             }
-                                .skills__project__a::before {
-                                    content: '';
-                                    position: absolute;
-                                    bottom: 0;
-                                    right: 0;
-                                    left: 0;
-                                    width: 20%;
-                                    height: 2px;
-                                    background: #0096ed;
-                                    transition: width 250ms ease-out; 
-                                }
-                                    .skills__project__a:hover::before {
-                                        width: 100%;
-                                    }
-                            .skills__project__modal-container {
-                                display: none;
-                                position: fixed;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                display: flex;
-                                background: #91909077;
-                                height: 100vh;
-                                width: 100vw;
-                                justify-content: center;
-                                align-items: center;
-                                z-index: 10;
-                            }
-                                .skills__project__overlay {
-                                    background: #fff;
-                                    width: 560px;
-                                    height: 450px;
-                                    margin: 20px;
-                                    position: fixed;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-content: center;
-                                    text-align: center;
-                                    border-radius: 3%;
-                                }
-                                    .skills__project__modal--cancel {
-                                        position: absolute;
-                                        top: 10px;
-                                        right: 20px;
-                                        cursor: pointer;
-                                        transition: 250ms;
-                                    }
-                                        .skills__project__modal--cancel:hover {
-                                            color: #0096ed;
-                                        }
-                                    .skills__project__modal--title {
-                                        position: relative;
-                                        color: #191919;
-                                        display: flex;
-                                        justify-content: center;
-                                    }
-                                        .skills__project__modal--title::after {
-                                            content: '';
-                                            position: absolute;
-                                            bottom: 0;
-                                            width: 110px;
-                                            height: 1px;
-                                            background: #0096ed;
-                                        }
-                                    .skills__project__modal__p {
-                                        font-weight: 300;
-                                        text-align: center;
-                                    }
-                                    .skills__project__modal__p--lang {
-                                        font-weight: 300;
-                                    }
 @media (min-width: 700px) and (max-width: 1160px) {
     .nav-toggle-label {
         display: none;

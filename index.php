@@ -32,25 +32,25 @@
                 <h2 class="skills__title">Skills</h2>
                 <div class="cards-container">
                     <div class="card">
-                        <h2 class="card__h2">HTML</h2>
+                        <h3 class="card__h2">HTML</h3>
                     </div>
                     <div class="card">
-                        <h2 class="card__h2">CSS3</h2>
+                        <h3 class="card__h2">CSS3</h3>
                     </div>
                     <div class="card">
-                        <h2 class="card__h2">SASS/SCSS</h2>
+                        <h3 class="card__h2">SASS/SCSS</h3>
                     </div>
                     <div class="card">
-                        <h2 class="card__h2">Adobe XD</h2>
+                        <h3 class="card__h2">Adobe XD</h3>
                     </div>
                     <div class="card">
-                        <h2 class="card__h2">JS</h2>
+                        <h3 class="card__h2">JS</h3>
                     </div>
                     <div class="card">
-                        <h2 class="card__h2">PHP</h2>
+                        <h3 class="card__h2">PHP</h3>
                     </div>
                     <div class="card">
-                        <h2 class="card__h2">SQL</h2>
+                        <h3 class="card__h2">SQL</h3>
                     </div>
                 </div>
                 <p class="skills__p">Everyday I work to become better at the languages I use.
