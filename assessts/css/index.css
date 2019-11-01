@@ -20,9 +20,12 @@ body {
         right: 0;
         background: #ffffff;
         z-index: 9999;
-        opacity: 0.95;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+        transition: 250ms;
     }
+        .nav--scrolled {
+            opacity: 0.95;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+        }
         .left {
             box-sizing: content-box;
         }
@@ -52,7 +55,8 @@ body {
                 background: rgba(0,150,237,.1);
                 padding: .5em 1em;
                 color: rgba(0,150,237,1);
-                transition: 270ms ;
+                transition: 270ms;
+                font-size: 19px;
             }
                 .right__a--coloured:hover, .right__a--coloured:focus {
                     background: rgba(0,150,237,.25);
@@ -113,6 +117,51 @@ body {
                 flex-direction: row;
                 flex-wrap: nowrap;
             }
+                .skills--hard {
+                    padding-right: 50px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                    .skills--hard__title {
+                        font-size: 19px;
+                        text-align: center;
+                        position: relative;
+                        padding-bottom: 2px;
+                        justify-content: center;
+                        display: flex;
+                        font-weight: 400;
+                    }
+                        .skills--hard__title::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            width: 100px;
+                            height: 1px;
+                            background: #0096ed;
+                        }
+                .skills--soft {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                    .skills--soft__title {
+                        font-size: 19px;
+                        text-align: center;
+                        position: relative;
+                        padding-bottom: 2px;
+                        justify-content: center;
+                        display: flex;
+                        font-weight: 400; 
+                    }
+                        .skills--soft__title::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            width: 100px;
+                            height: 1px;
+                            background: #0096ed;
+                        }
                 .card {
                     border: solid 2px #000;
                     margin: 5px;
@@ -122,7 +171,7 @@ body {
                     .card:hover, .card:focus {
                         border-color: #0096ed;
                     }
-                    .card__h2 {
+                    .card__h3 {
                         font-weight: 300;
                         padding: 5px;
                         margin-bottom: 1px;
@@ -233,7 +282,6 @@ body {
                         left: 0;
                         right: 0;
                         bottom: 0;
-                        display: flex;
                         background: #91909077;
                         height: 100vh;
                         width: 100vw;
@@ -256,6 +304,7 @@ body {
                                 right: 20px;
                                 cursor: pointer;
                                 transition: 250ms;
+                                font-size: 20px;
                             }
                                 .skills__project__modal--cancel:hover {
                                     color: #0096ed;

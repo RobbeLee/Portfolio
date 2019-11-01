@@ -10,7 +10,7 @@
     </head>
     <body>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
+        <nav class="nav--scrolled">
             <div class="left">
                 <a class="left__title" href="#top">< Robbe /></a>
             </div>
@@ -31,26 +31,53 @@
             <div class="skills" id="skills">
                 <h2 class="skills__title">Skills</h2>
                 <div class="cards-container">
-                    <div class="card">
-                        <h3 class="card__h2">HTML</h3>
+                    <div class="skills--hard">
+                    <h2 class="skills--hard__title">Hard skills</h2>
+                        <div class="card">
+                            <h3 class="card__h3">HTML</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">CSS3</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">SASS/SCSS</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Adobe XD</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">JS</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">PHP</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">SQL</h3>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3 class="card__h2">CSS3</h3>
-                    </div>
-                    <div class="card">
-                        <h3 class="card__h2">SASS/SCSS</h3>
-                    </div>
-                    <div class="card">
-                        <h3 class="card__h2">Adobe XD</h3>
-                    </div>
-                    <div class="card">
-                        <h3 class="card__h2">JS</h3>
-                    </div>
-                    <div class="card">
-                        <h3 class="card__h2">PHP</h3>
-                    </div>
-                    <div class="card">
-                        <h3 class="card__h2">SQL</h3>
+                    <div class="skills--soft">
+                        <h2 class="skills--soft__title">Soft skills</h2>
+                        <div class="card">
+                            <h3 class="card__h3">Professional emails</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Documentatiom</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Customer focus</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Project management</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Planning</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Teamwork</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Presentations</h3>
+                        </div>
                     </div>
                 </div>
                 <p class="skills__p">Everyday I work to become better at the languages I use.
@@ -66,20 +93,19 @@
                         <h3 class="skills__project__title">Ocean Studios</h3>
                         <img class="skills__project__img" src="assessts/images/ocean-mockup.png" alt="This would be a project mockup">
                         <p class="skills__project__p">
-                            Ocean studios was a group project where we built a website for our little company.
-                            I worked on the webshop part of the website. 
+                            website we built for our little company. 
                         </p>
                         <a class="skills__project__a" data-id="0">Learn more</a>
                     </div>
                     <div class="skills__project__modal-container" data-id="0">
                         <div id="skills__project__modal" class="skills__project__overlay">
-                            <a class="skills__project__modal--cancel" data-id="0">&times;</a>
+                            <a class="skills__project__modal--cancel" data-id="0">X</a>
 	                        <div class="skills__project__modal--popup">
 	                        <h2 class="skills__project__modal--title">Ocean Studios</h2>
                                 <img class="skills__project__img" src="assessts/images/ocean-mockup.png" alt="This would be a project mockup">
 		                        <div class="skills__project__modal--content">
-                                    <p class="skills__project__modal__p">Ocean studios was a group project where we built a website for our little company. 
-                                        I worked on the webshop part of the website. </p>
+                                    <p class="skills__project__modal__p">Ocean studios was a group project where we built a website for our little company we made at school. 
+                                        I worked on the front-end webshop part of the website. </p>
                                     <p class="skills__project__modal__p--lang"><b>Talen:</b> HTML, CSS, PHP, JSON, JS</p>
                                     <a class="skills__project__a" href="http://www.oceanstudios.nl" target="_blank">Project link</a>
                                     <a class="skills__project__a" href="https://github.com/RobbeLee/OceanStudios" target="_blank">Github link</a>           
@@ -95,7 +121,7 @@
                     </div>
                     <div class="skills__project__modal-container" data-id="1">
                         <div id="skills__project__modal" class="skills__project__overlay">
-                            <a class="skills__project__modal--cancel" data-id="1">&times;</a>
+                            <a class="skills__project__modal--cancel" data-id="1">X</a>
 	                        <div class="skills__project__modal--popup">
 	                        <h2 class="skills__project__modal--title">The Chain</h2>
                                 <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
@@ -116,7 +142,7 @@
                     </div>
                     <div class="skills__project__modal-container" data-id="2">
                         <div id="skills__project__modal" class="skills__project__overlay">
-                            <a class="skills__project__modal--cancel" data-id="2">&times;</a>
+                            <a class="skills__project__modal--cancel" data-id="2">X</a>
 	                        <div class="skills__project__modal--popup">
 	                        <h2 class="skills__project__modal--title">GATO</h2>
                                 <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
