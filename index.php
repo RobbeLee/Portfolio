@@ -9,20 +9,27 @@
         <title>Home | Robbe</title>
     </head>
     <body>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav class="nav--scrolled">
-            <div class="left">
-                <a class="left__title" href="#top">< Robbe /></a>
+        <header>
+            <nav class="nav--scrolled">
+                <div class="left">
+                    <a class="left__title" href="#top">< Robbe /></a>
+                </div>
+                <div class="right">
+                    <a href="#skills" class="right__a">Skills</a>
+                    <a href="#who" class="right__a">About me</a>
+                    <a href="#contact" class="right__a right__a--coloured">Contact</a>
+                </div>
+            </nav>
+            <a onclick="openNav()"class="menu" href="#"><button>Menu</button></a>
+            <div class="overlay" id="mobile__menu">
+                <a class="close" onclick="closeNav()">X</a>
+                <div class="overlay__content">
+                    <a href="#skills" class="overlay__content--link">Skills</a>
+                    <a href="#who" class="overlay__content--link">About me</a>
+                    <a href="#contact" class="overlay__content--link">Contact</a>
+                </div>
             </div>
-            <div class="right">
-                <a href="#skills" class="right__a">Skills</a>
-                <a href="#who" class="right__a">About me</a>
-                <a href="#contact" class="right__a right__a--coloured">Contact</a>
-            </div>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+        </header>
         <div class="wrapper">
             <div class="titles">
                 <h2 class="titles__subtitle">I AM A FULLSTACK WEBDEVELOPER</h2>
@@ -116,7 +123,7 @@
                     <div class="skills__project">
                         <h3 class="skills__project__title">The Chain</h3>
                         <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
-                        <p class="skills__project__p">This was a solo project where I had to build a website for a community, I built one for a D&D community. For this project everything is loaded in from a database.</p>
+                        <p class="skills__project__p">This was a solo project where I had to build a website for a community.</p>
                         <a class="skills__project__a" data-id="1">Learn more</a>
                     </div>
                     <div class="skills__project__modal-container" data-id="1">
@@ -137,7 +144,7 @@
                     <div class="skills__project">
                         <h3 class="skills__project__title">Gato</h3>
                         <img class="skills__project__img" src="assessts/images/gato-mockup.png" alt="This would be a project mockup">
-                        <p class="skills__project__p">Gato was a group project where we had to make a small social media platform. This was our first bigger group project.</p>
+                        <p class="skills__project__p">Gato was a group project where we had to make a small social media platform.</p>
                         <a class="skills__project__a" data-id="2">Learn more</a>
                     </div>
                     <div class="skills__project__modal-container" data-id="2">
@@ -147,7 +154,7 @@
 	                        <h2 class="skills__project__modal--title">GATO</h2>
                                 <img class="skills__project__img" src="assessts/images/chain-mockup.png" alt="This would be a project mockup">
 		                        <div class="skills__project__modal--content">
-                                    <p class="skills__project__modal__p">Gato was a group project where we had to make a small social media platform. This was our first bigger group project.</p>
+                                    <p class="skills__project__modal__p">Gato was a group project where we had to make a small social media platform. This was our first bigger group project. I built the front and back-end for the posting system and made the front-end for the about page.</p>
                                     <p class="skills__project__modal__p--lang"><b>Talen:</b> PHP, SQL, HTML, CSS, AJAX, JS, JSON</p>
                                     <a class="skills__project__a" href="https://github.com/RobbeLee/Gato" target="_blank">Github link</a>           
                                 </div>

@@ -1,3 +1,10 @@
+function openNav() { 
+    document.getElementById("mobile__menu").style.width = "100%";
+}
+function closeNav() { 
+    document.getElementById("mobile__menu").style.width = "0";
+}
+
 const btns = document.querySelectorAll('.skills__project__a')
 const closebtns = document.querySelectorAll('.skills__project__modal--cancel')
 
