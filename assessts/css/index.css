@@ -10,6 +10,11 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 30px 10%;
+        width: 100%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+        z-index: 9998;
+        position: fixed;
+        background: #fff;
         }
         nav {
             display: flex;
@@ -64,9 +69,9 @@ body {
                     .right__a--coloured:hover, .right__a--coloured:focus {
                         background: rgba(0,150,237,.25);
                     }
-        .menu {
-            display: none;
-        }
+            .menu {
+                display: none;
+            }
         .overlay {
             height: 100%;
             width: 0;
@@ -85,14 +90,25 @@ body {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                transition: ease-in-out 200ms;
                 }
                     .overlay__content--link {
                         padding: 15px;
-                        display: block;
-                        transition: all 0.3s ease 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         text-decoration: none;
-                        color: #000000;
+                        position: relative;
+                        color: #191919;
                     }
+                        .overlay__content--link--stripe::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            width: 100px;
+                            height: 1px;
+                            background: #0096ed;
+                        }
                         .overlay__content--link:hover, .overlay__content--link:focus {
                             color: #0088a9;
                         }
@@ -339,6 +355,7 @@ body {
                             position: fixed;
                             text-align: center;
                             border-radius: 3%;
+                            max-width: 95%;
                         }
                             .skills__project__modal--cancel {
                                 position: absolute;
@@ -483,9 +500,6 @@ body {
                             width: 100%;
                         }
 @media (min-width: 700px) and (max-width: 1160px) {
-    .nav-toggle-label {
-        display: none;
-    }
     .titles {
         display: flex;
         flex-direction: column;
@@ -616,6 +630,27 @@ body {
             transition: opacity 150ms ease-in-out;
             justify-content: center;
         }
+    .menu__span,
+    .menu__span::before,
+    .menu__span::after {
+        display: block;
+        background: #000000;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: fixed;
+    }  
+    .menu__span::before,
+    .menu__span::after {
+        content: '';
+        position: absolute;
+    }  
+    .menu__span::before {
+        bottom: 7px;
+    }  
+    .menu__span::after {
+        top: 7px;
+    }
     .overlay__content--link {
         font-size: 30px;
     }
@@ -623,7 +658,7 @@ body {
             font-size: 40px;
             top: 15px;
             right: 35px;
-            }
+        }
     .titles {
         width: 100%;
         height: 100vh;

@@ -9,20 +9,28 @@
         <title>Projects | Robbe</title>
     </head>
     <body>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-            <div class="left">
-                <a class="left__title" href="index.php">< Robbe /></a>
+        <header>
+            <nav>
+                <div class="left">
+                    <a class="left__title" href="index.php">< Robbe /></a>
+                </div>
+                <div class="right">
+                    <a href="index.php#skills" class="right__a">Skills</a>
+                    <a href="index.php#who" class="right__a">About me</a>
+                    <a href="index.php#contact" class="right__a">Contact</a>
+                </div>
+            </nav>
+            <a onclick="openNav()" class="menu menu__span" href="#"></a>
+            <div class="overlay" id="mobile__menu">
+                <a class="close" onclick="closeNav()">X</a>
+                <div class="overlay__content">
+                    <a onclick="closeNav()" href="index.php" class="overlay__content--link overlay__content--link--stripe">Home</a>
+                    <a onclick="closeNav()" href="index.php#skills" class="overlay__content--link overlay__content--link--stripe">Skills</a>
+                    <a onclick="closeNav()" href="index.php#who" class="overlay__content--link overlay__content--link--stripe">About me</a>
+                    <a onclick="closeNav()" href="index.php#contact" class="overlay__content--link ">Contact</a>
+                </div>
             </div>
-            <div class="right">
-                <a href="index.php#skills" class="right__a">Skills</a>
-                <a href="index.php#who" class="right__a">About me</a>
-                <a href="index.php#contact" class="right__a">Contact</a>
-            </div>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+        </header>
         <div class="wrapper">
             <div class="title">
                 <h1 class="title__h1">Projects</h1>

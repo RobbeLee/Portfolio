@@ -20,13 +20,13 @@
                     <a href="#contact" class="right__a right__a--coloured">Contact</a>
                 </div>
             </nav>
-            <a onclick="openNav()"class="menu" href="#"><button>Menu</button></a>
+            <a onclick="openNav()" class="menu menu__span" href="#"></a>
             <div class="overlay" id="mobile__menu">
                 <a class="close" onclick="closeNav()">X</a>
                 <div class="overlay__content">
-                    <a href="#skills" class="overlay__content--link">Skills</a>
-                    <a href="#who" class="overlay__content--link">About me</a>
-                    <a href="#contact" class="overlay__content--link">Contact</a>
+                    <a onclick="closeNav()" href="#skills" class="overlay__content--link overlay__content--link--stripe">Skills</a>
+                    <a onclick="closeNav()" href="#who" class="overlay__content--link overlay__content--link--stripe">About me</a>
+                    <a onclick="closeNav()" href="#contact" class="overlay__content--link">Contact</a>
                 </div>
             </div>
         </header>

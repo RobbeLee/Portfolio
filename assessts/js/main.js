@@ -9,7 +9,6 @@ const btns = document.querySelectorAll('.skills__project__a')
 const closebtns = document.querySelectorAll('.skills__project__modal--cancel')
 
 btns.forEach(btn => btn.addEventListener('click', function() {open(btn)}))
-
 closebtns.forEach(btn => btn.addEventListener('click', function() {cancel(btn)}))
 
 //nav = document.querySelector('nav'),
