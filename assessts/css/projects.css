@@ -145,7 +145,7 @@ body {
         }
             .skills__projects-container {
                 display: flex;
-                flex-direction: row;
+                flex-flow: row wrap;
                 padding: 10px;
                 justify-content: center;
             }
@@ -154,6 +154,10 @@ body {
                     background: #fff;
                     box-shadow: 0 0 16px 0 rgba(190, 190, 190, 0.2), 0 16px 32px 0 rgba(0, 0, 0, 0.11);
                     border-radius: 14px;
+                    width: 300px;
+                    margin: 0 auto 50px; 
+                    display: flex;
+                    flex-flow: column nowrap;
                 }
                     .skills__project + .skills__project {
                         margin-left: -20px;
@@ -183,6 +187,8 @@ body {
                         font-weight: 300;
                         color: #191919;
                         padding: 10px;
+                        display: flex;
+                        flex-grow: 1;
                     }
                     .skills__project__a {
                         text-decoration: none;
@@ -191,6 +197,9 @@ body {
                         padding: 5px;
                         padding-bottom: 0;
                         cursor: pointer;
+                        width: min-content;
+                        white-space: nowrap;
+                        margin: 0 auto;
                     }
                         .skills__project__a::before {
                             content: '';
@@ -232,7 +241,7 @@ body {
                             align-content: center;
                             text-align: center;
                             border-radius: 3%;
-                            max-width: 95%;
+                            max-width: 90%;
                         }
                             .skills__project__modal--cancel {
                                 position: absolute;
@@ -393,7 +402,6 @@ body {
                     margin-left: 0;
                 }
 }  
-
 @media (max-width: 400px) {
     nav {
         position: absolute;
