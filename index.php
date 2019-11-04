@@ -6,35 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Robbe van der Lee">
         <link rel="stylesheet" href="assessts/css/index.css">
-        <title>Home | Robbe</title>
+        <title>Robbe van der Lee</title>
     </head>
     <body>
-        <header>
-            <nav class="nav--scrolled">
-                <div class="left">
-                    <a class="left__title" href="#top">< Robbe /></a>
-                </div>
-                <div class="right">
-                    <a href="#skills" class="right__a">Skills</a>
-                    <a href="#who" class="right__a">About me</a>
-                    <a href="#contact" class="right__a right__a--coloured">Contact</a>
-                </div>
-            </nav>
-            <a onclick="openNav()" class="menu menu__span" href="#"></a>
-            <div class="overlay" id="mobile__menu">
-                <a class="close" onclick="closeNav()">X</a>
-                <div class="overlay__content">
-                    <a onclick="closeNav()" href="#skills" class="overlay__content--link overlay__content--link--stripe">Skills</a>
-                    <a onclick="closeNav()" href="#who" class="overlay__content--link overlay__content--link--stripe">About me</a>
-                    <a onclick="closeNav()" href="#contact" class="overlay__content--link">Contact</a>
-                </div>
+        <nav class="nav">
+            <div class="left">
+                <a class="left__title" href="#top">< Robbe /></a>
             </div>
-        </header>
-        <div class="wrapper">
+            <div class="right">
+                <a href="#skills" class="right__a">Skills</a>
+                <a href="#who" class="right__a">About me</a>
+                <a href="#contact" class="right__a right__a--coloured">Contact</a>
+            </div>
+        </nav>
+        <a onclick="openNav()" class="menu menu__span" href="#"></a>
+        <div class="overlay" id="mobile__menu">
+            <a class="close" onclick="closeNav()">X</a>
+            <div class="overlay__content">
+                <a onclick="closeNav()" href="#skills" class="overlay__content--link overlay__content--link--stripe">Skills</a>
+                <a onclick="closeNav()" href="#who" class="overlay__content--link overlay__content--link--stripe">About me</a>
+                <a onclick="closeNav()" href="#contact" class="overlay__content--link">Contact</a>
+            </div>
+        </div>
+        <header>
             <div class="titles">
                 <h2 class="titles__subtitle">I AM A FULLSTACK WEBDEVELOPER</h2>
                 <h1 id="home" class="titles__title">Robbe van der Lee</h1>
             </div>
+        </header>
+        <div class="wrapper">
             <div class="skills" id="skills">
                 <h2 class="skills__title">Skills</h2>
                 <div class="cards-container">
@@ -84,6 +84,18 @@
                         </div>
                         <div class="card">
                             <h3 class="card__h3">Presentations</h3>
+                        </div>
+                    </div>
+                    <div class="skills--learning">
+                        <h2 class="skills--learning__title">Learning</h2>
+                        <div class="card">
+                            <h3 class="card__h3">Vue.js</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Java</h3>
+                        </div>
+                        <div class="card">
+                            <h3 class="card__h3">Laravel</h3>
                         </div>
                     </div>
                 </div>
@@ -162,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="skills__p2">Want to see <a href="projects.php" class="skills__a">more</a> ?</p>           
+                <p class="skills__p2">Want to see <a href="projects" class="skills__a">more</a> ?</p>           
             </div>
             <div class="who" id="who">
                 <h2 class="who__title">Who am I?</h2>
@@ -192,6 +204,6 @@
                 </ul>
             </div>
         </div>
+        <script src="assessts/js/main.js"></script>
     </body>
-<script src="assessts/js/main.js"></script>
 </html>

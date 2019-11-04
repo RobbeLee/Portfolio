@@ -1,74 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap'); /*font-family: 'Roboto', sans-serif;*/
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap'); /*font-family: 'Inconsolata', monospace;*/
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-    header {
+    nav {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        padding: 30px 10%;
-        width: 100%;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-        z-index: 9998;
+        align-content: center;
+        padding: 20px 40px;
         position: fixed;
-        background: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        z-index: 9999;
+        height: 50px;
+        transition: box-shadow 250ms ease-out, height 250ms ease-out;
+    }
+        .nav--scrolled {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            height: 37px;
         }
-        nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-content: center;
-            padding: 20px 40px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #ffffff;
-            z-index: 9999;
-            transition: 250ms;
+        .left {
+            box-sizing: content-box;
         }
-            .nav--scrolled {
-                opacity: 0.95;
-                box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            .left__title {
+                margin: 0;
+                padding-right: 40px;
+                padding-left: 10px;
+                font-size: 25px;
+                text-decoration: none;
+                color: #000;
             }
-            .left {
-                box-sizing: content-box;
+        .right {
+            padding-top: 5px;
+        }
+            .right__a {
+                text-decoration: none;
+                padding: 5px;
+                font-size: 18px;
+                color: #000000;
+                transition: color 300ms;
+                transition: 270ms;
             }
-                .left__title {
-                    margin: 0;
-                    padding-right: 40px;
-                    padding-left: 10px;
-                    font-size: 25px;
-                    text-decoration: none;
-                    color: #000;
+                .right__a:hover, .right__a:focus {
+                    color: #0096ed;
                 }
-            .right {
-                padding-top: 5px;
+            .right__a--coloured {
+                border-radius: 2000px;
+                background: rgba(0,150,237,.1);
+                padding: .5em 1em;
+                color: rgba(0,150,237,1);
+                font-size: 19px;
             }
-                .right__a {
-                    text-decoration: none;
-                    padding: 5px;
-                    font-size: 18px;
-                    color: #000000;
-                    transition: color 300ms;
+                .right__a--coloured:hover, .right__a--coloured:focus {
+                    background: rgba(0,150,237,.25);
                 }
-                    .right__a:hover, .right__a:focus {
-                        color: #0096ed;
-                    }
-                .right__a--coloured {
-                    border-radius: 2000px;
-                    background: rgba(0,150,237,.1);
-                    padding: .5em 1em;
-                    color: rgba(0,150,237,1);
-                    transition: 270ms;
-                    font-size: 19px;
-                }
-                    .right__a--coloured:hover, .right__a--coloured:focus {
-                        background: rgba(0,150,237,.25);
-                    }
             .menu {
                 display: none;
             }
@@ -176,10 +165,7 @@ body {
                 flex-wrap: nowrap;
             }
                 .skills--hard {
-                    padding-right: 50px;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
+                    margin-right: 20px;
                 }
                     .skills--hard__title {
                         font-size: 19px;
@@ -198,11 +184,6 @@ body {
                             height: 1px;
                             background: #0096ed;
                         }
-                .skills--soft {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                }
                     .skills--soft__title {
                         font-size: 19px;
                         text-align: center;
@@ -220,11 +201,31 @@ body {
                             height: 1px;
                             background: #0096ed;
                         }
+                .skills--learning {
+                    margin-left: 20px;
+                }
+                    .skills--learning__title {
+                        font-size: 19px;
+                        text-align: center;
+                        position: relative;
+                        padding-bottom: 2px;
+                        justify-content: center;
+                        display: flex;
+                        font-weight: 400; 
+                    }
+                        .skills--learning__title::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            width: 90px;
+                            height: 1px;
+                            background: #0096ed;
+                        }
                 .card {
                     border: solid 2px #000;
                     margin: 5px;
                     transition: border-color 300ms ease;
-                    width: 100%;
+                    width: 150px;
                 }
                     .card:hover, .card:focus {
                         border-color: #0096ed;

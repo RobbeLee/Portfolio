@@ -12,12 +12,12 @@
         <header>
             <nav>
                 <div class="left">
-                    <a class="left__title" href="index.php">< Robbe /></a>
+                    <a class="left__title" href="./">< Robbe /></a>
                 </div>
                 <div class="right">
                     <a href="/#skills" class="right__a">Skills</a>
                     <a href="/#who" class="right__a">About me</a>
-                    <a href="/#contact" class="right__a">Contact</a>
+                    <a href="/#contact" class="right__a--coloured">Contact</a>
                 </div>
             </nav>
             <a onclick="openNav()" class="menu menu__span" href="#"></a>
@@ -206,6 +206,6 @@
                 </div>
             </div>
         </div>
+        <script src="assessts/js/main.js"></script>
     </body>
-<script src="assessts/js/main.js"></script>
 </html>
