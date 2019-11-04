@@ -54,6 +54,7 @@ nav {
             padding: .5em 1em;
             color: rgba(0,150,237,1);
             font-size: 19px;
+            text-decoration: none;
         }
             .right__a--coloured:hover, .right__a--coloured:focus {
                 background: rgba(0,150,237,.25);
@@ -433,6 +434,7 @@ nav {
         width: 2em;
         border-radius: 2px;
         position: fixed;
+        top: 15px;
     }  
     .menu__span::before,
     .menu__span::after {

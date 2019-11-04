@@ -195,13 +195,23 @@
             <div class="contact" id="contact">
                 <h2 class="contact__title">Contact</h2>
                 <p class="contact__p"> There are several ways to contact me and/or find me.</p>
-                <ul class="contact__list">
-                    <li class="contact__list__li">Email : info@robbelee.nl </li>
-                    <li class="contact__list__li">Phone : +31 06 12 55 91 73</li>
-                    <li class="contact__list__li">LinkedIn : <a href="https://www.linkedin.com/in/robbe-lee/" target="_blank" class="contact__list__li__a">Robbe van der Lee</a></li>
-                    <li class="contact__list__li">Github : <a href="https://github.com/RobbeLee" target="_blank" class="contact__list__li__a">RobbeLee</a></li>
-                    <li class="contact__list__li">Or talk to me in real life :)</li>
-                </ul>
+                <div class="contact__list-container">
+                    <div class="contact__left">
+                        <h3 class="contact__left__title">Direct contact</h3>
+                        <ul class="contact__left__list">
+                            <li class="contact__left__list__li">Email : info@robbelee.nl </li>
+                            <li class="contact__left__list__li">Phone : +31 06 12 55 91 73</li>
+                        </ul>
+                    </div>
+                    <div class="contact__right">
+                        <h3 class="contact__right__title">Social contact</h3>
+                        <ul class="contact__right__list">
+                            <li class="contact__right__list__li">LinkedIn : <a href="https://www.linkedin.com/in/robbe-lee/" target="_blank" class="contact__list__li__a">Robbe van der Lee</a></li>
+                            <li class="contact__right__list__li">Github : <a href="https://github.com/RobbeLee" target="_blank" class="contact__list__li__a">RobbeLee</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="contact__p">Or talk to me in real life :)</p>
             </div>
         </div>
         <script src="assessts/js/main.js"></script>
