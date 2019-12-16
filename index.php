@@ -19,13 +19,17 @@
                 <a href="#contact" class="right__a right__a--coloured">Contact</a>
             </div>
         </nav>
-        <a onclick="openNav()" class="menu menu__span" href="#"></a>
-        <div class="overlay" id="mobile__menu">
-            <a class="close" onclick="closeNav()">X</a>
-            <div class="overlay__content">
-                <a onclick="closeNav()" href="#skills" class="overlay__content--link overlay__content--link--stripe">Skills</a>
-                <a onclick="closeNav()" href="#who" class="overlay__content--link overlay__content--link--stripe">About me</a>
-                <a onclick="closeNav()" href="#contact" class="overlay__content--link">Contact</a>
+        <div class="mobile-nav--container">
+            <div class="mobile-nav__hamburger">
+                <a onclick="openNav()" class="menu menu__span" href="#"></a>
+            </div>
+            <div class="overlay" id="mobile__menu">
+                <a class="close" onclick="closeNav()">X</a>
+                <div class="overlay__content">
+                    <a onclick="closeNav()" href="#skills" class="overlay__content--link overlay__content--link--stripe">Skills</a>
+                    <a onclick="closeNav()" href="#who" class="overlay__content--link overlay__content--link--stripe">About me</a>
+                    <a onclick="closeNav()" href="#contact" class="overlay__content--link">Contact</a>
+                </div>
             </div>
         </div>
         <header>
@@ -65,16 +69,16 @@
                     <div class="skills--soft">
                         <h2 class="skills--soft__title">Soft skills</h2>
                         <div class="card">
-                            <h3 class="card__h3">Professional emails</h3>
+                            <h3 class="card__h3">Project management</h3>
                         </div>
                         <div class="card">
-                            <h3 class="card__h3">Documentatiom</h3>
+                            <h3 class="card__h3">Documentation</h3>
                         </div>
                         <div class="card">
                             <h3 class="card__h3">Customer focus</h3>
                         </div>
                         <div class="card">
-                            <h3 class="card__h3">Project management</h3>
+                            <h3 class="card__h3">Professional emails</h3>
                         </div>
                         <div class="card">
                             <h3 class="card__h3">Planning</h3>

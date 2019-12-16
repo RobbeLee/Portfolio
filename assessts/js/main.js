@@ -1,3 +1,4 @@
+//mobile nav
 function openNav() { 
     document.getElementById("mobile__menu").style.width = "100%";
 }
@@ -8,6 +9,8 @@ function closeNav() {
 const btns = document.querySelectorAll('.skills__project__a')
 const closebtns = document.querySelectorAll('.skills__project__modal--cancel')
 
+
+//modals
 btns.forEach(btn => btn.addEventListener('click', function() {open(btn)}))
 closebtns.forEach(btn => btn.addEventListener('click', function() {cancel(btn)}))
 
@@ -22,9 +25,9 @@ function cancel(closebtn) {
     const modal = document.querySelector(`.skills__project__modal-container[data-id="${id}"]`)
     modal.style.display = "none"
 }
-
+//nav intersection observer
 const nav = document.querySelector('nav')
-      header = document.querySelector('header')
-      navObserver = new IntersectionObserver(entries => entries.forEach(entry => (!entry.isIntersecting) ? nav.classList.add('nav--scrolled') : nav.classList.remove('nav--scrolled')),{rootMargin: "-80% 0px 0px 0px"})
+    header = document.querySelector('header')
+    navObserver = new IntersectionObserver(entries => entries.forEach(entry => (!entry.isIntersecting) ? nav.classList.add('nav--scrolled') : nav.classList.remove('nav--scrolled')),{rootMargin: "-80% 0px 0px 0px"})
 
 navObserver.observe(header)
