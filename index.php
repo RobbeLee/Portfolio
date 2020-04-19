@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="skills__p">Everyday I work to become better at the languages I use.
+                <p class="skills__p">Everyday I work to become better at the tools I use.
                     For frontend I am currently working a lot with HTML5, CSS3 and Javascript for school.
                     <!-- In my own time I am working on my
                     Hier later invoegen -->
